@@ -8,18 +8,21 @@
 </head>
 <body>
     <div class="container">
-    <h1>Tip Calculator</h1>
-    <p>Enter the bill amount:</p>
-    <label for="billAmount">Bill Amount:</label>
-    <input type="number" id="billAmount" min="0" step="1" placeholder="0.00">
-    <br>
-    <label for="tip">Tip percentage</label>
-<input type="number" id="tip">
-<br/>
-<button id="Calculate">Calculate</button>
-<br/>
-<label for="total">Total Amount:</label>
-<span id="total"></span>
-<script src="index.js"></script>
+        <h1>Tip Calculator</h1>
+        <div class="input-group">
+            <label for="billAmount">Bill Amount:</label>
+            <input type="number" id="billAmount" min="0" step="0.01" placeholder="0.00" required>
+        </div>
+        <div class="input-group">
+            <label for="tip">Tip percentage:</label>
+            <input type="number" id="tip" min="0" max="100" value="15" placeholder="15">
+        </div>
+        <button id="calculate">Calculate</button>
+        <div class="result">
+            <label for="total">Total Amount:</label>
+            <span id="total">0.00</span>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

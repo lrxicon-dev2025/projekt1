@@ -1,0 +1,20 @@
+/* Basic reset and page layout */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #072a40; color: #fff; padding: 20px; }
+.page { max-width: 900px; margin: 0 auto; display: block; gap: 20px; align-items: start; }
+
+/* Removed tip calculator styles (calculator deleted) */
+/* Todo styles */
+
+/* Todo styles */
+.todo-app { background:#184e4f; padding: 18px; border-radius:8px; box-shadow: 0 6px 18px rgba(0,0,0,0.25); }
+.todo-app h1, .todo-app h2 { margin-bottom: 10px; font-size:1.1rem; }
+.todo-form { display:flex; gap:8px; margin-bottom:12px; }
+.todo-form input[type="text"] { flex:1; padding:8px; border-radius:6px; border:1px solid rgba(255,255,255,0.12); }
+.todo-list { list-style:none; max-height: 300px; overflow:auto; padding: 0; }
+.todo-item { display:flex; align-items:center; gap:8px; padding:8px; border-radius:6px; background: rgba(255,255,255,0.03); margin-bottom:8px; }
+.todo-item.done .todo-text { text-decoration: line-through; opacity:0.7; }
+.todo-delete { margin-left:auto; background:transparent; color:#fff; border:none; font-size:16px; cursor:pointer; }
+
+/* Responsive */
+@media (max-width: 800px) { .page { padding: 0 8px; } }
